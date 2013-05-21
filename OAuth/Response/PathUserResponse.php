@@ -51,6 +51,30 @@ class PathUserResponse extends AbstractUserResponse
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function getEmail()
+    {
+        return $this->getValueForPath('email');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFirstName()
+    {
+        return $this->getValueForPath('first_name');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getLastName()
+    {
+        return $this->getValueForPath('last_name');
+    }
+
+    /**
      * Get the configured paths.
      *
      * @return array
