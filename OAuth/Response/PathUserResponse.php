@@ -66,6 +66,22 @@ class PathUserResponse extends AbstractUserResponse
     /**
      * {@inheritdoc}
      */
+    public function getFirstName()
+    {
+        return $this->getValueForPath('first_name');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getLastName()
+    {
+        return $this->getValueForPath('last_name');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getProfilePicture()
     {
         return $this->getValueForPath('profilepicture');
